@@ -1,38 +1,86 @@
 .App {
-  text-align: center;
+  font-family: tahoma, sans-serif;
+  text-align: left;
+  max-width: 550px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form {
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  width: calc(100% - 20px);
+  margin: 10px 10px;
+  line-height: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input {
+  border-radius: 10px;
+  padding: 5px;
+  /* cursor: pointer; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button {
+  background: rgb(140, 237, 143);
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: unset;
+  padding: 10px;
+  margin: 50px;
+  cursor: pointer;
+  width: 200px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.record {
+  text-align: left;
+  background: rgb(238, 235, 235);
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+}
+
+.approved {
+  border-left: 5px solid rgb(128, 228, 128);
+}
+
+.unapproved {
+  border-left: 5px solid rgb(243, 102, 102);
+}
+
+.deleteBtn {
+  background-color: rgb(219, 4, 4);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
+  border: unset;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.export {
+  background:rgb(95, 183, 242);
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: unset;
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+  
 }
